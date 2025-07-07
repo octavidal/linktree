@@ -1,0 +1,323 @@
+@font-face {
+    font-family: FOT-Rodin Pro DB;
+    src: url("fuentes/FOT-Rodin Pro DB/FOT-Rodin Pro DB.otf") format('truetype');
+}
+*{
+    font-family: FOT-Rodin Pro DB;
+    margin: 0%;
+    padding: 0%;
+}
+
+#main-content {
+    background-color: #1269cc; 
+    padding: 20px;
+}
+
+h1{
+    color: #51eefc;
+    text-decoration: bold;
+    text-align: center;
+}
+
+h2{
+    color: #51eefc;
+}
+
+h3{
+    color: #51eefc;    
+}
+
+p{
+    color: rgb(48,48,48);
+}
+
+a{
+    color: rgb(109,154,199);
+    width: 100%;
+    text-decoration: none;
+}
+
+#foto-identikit{
+    width: 23%;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 2px solid #303030;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pagina-fav{
+    transition: transform 0.2s;
+    cursor: pointer;
+    margin: 2%;
+}
+
+.pagina-fav:hover{
+    transform: scale(1.06);
+}
+
+.contenedor-lista-identikit-paginas{
+    display: flex;
+    margin-left: 25rem;
+}
+
+#pixelarth1{
+    padding: 2%;
+    background-color: #1269cc;
+    text-align: center;
+
+}
+.contenedor-lista {
+  align-items: center;
+}
+
+.contenedor-lista-trivia{   
+    align-items: center;
+}
+
+.contenedor-lista-pixelart{
+    align-items: center;
+}
+
+.contenedor-lista-multimedia{ 
+    align-items: center;
+}
+
+#pixelartmain{
+    background: #1269cc;
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}   
+
+border-collapse{
+    border-collapse: collapse;
+}
+
+#pixelartdiv{
+    width: 45%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #303030;
+    border: 2px solid #303030;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+td{
+width: 20px;
+height: 20px;
+}
+
+#a29, #a30, #a31, #a32, #a48, #a47, #a66, #a65, #a85, #a104, #a124, #a143, #a163, #a183, #a203, #a224, #a244, #a265,
+#a285, #a286, #a306, #a307, #a327, #a328, #a329, #a330, #a312, #a313, #a295, #a296, #a276, #a257, #a237, #a218, #a198, 
+#a178, #a158, #a137, #a117, #a96, #a76, #a75, #a54, #a53, #a165, #a185, #a210, #a230 {
+    background-color: rgb(0, 0, 0);
+}
+
+#a231, #a232, #a211, #a212, #a213, #a214,  #a191, #a192,  #a193,  #a194,  #a195,  #a173,  #a174,  #a175,  #a152,  
+#a153,  #a154,  #a155,  #a156,  #a126,  #a127, #a128, #a129, #a130, #a131, #a132, #a133, #a134, #a135, #a136, #a105,
+#a106, #a107, #a108, #a109, #a110, #a111, #a112, #a113,#a114, #a115, #a116, #a86, #a87, #a88, #a89, #a90, #a91, #a92, 
+#a93, #a186, #a187, #a189, #a190, #a170, #a171, #a149, #a148, #a147, #a146, #a145, #a94, #a95, #a67, #a68, #a69, #a70,
+#a71, #a72, #a73, #a74, #a74, #a49, #a50, #a51, #a52, #a229, #a228, #a227, #a209, #a208, #a207, #a206, #a168, #a166, #a144,
+#a164, #a291, #a289, #a308, #a287, #a266{
+    background-color: rgb(255, 255, 255);
+}
+
+#a125, #a167, #a188, #a169, #a150, #a151, #a172, #a246, #a267, #a268, #a269, #a270, #a271, #a292, #a310{
+    background-color: rgb(44, 43, 43);
+}
+
+#a234, #a233, #a215, #a196, #a176, #a177, #a157{
+    background-color: rgb(167, 165, 165);
+}
+
+#a288, #a290, #a309{
+    background-color: rgb(183, 185, 185);
+}
+
+#a184, #a205, #a226, #a248, #a249, #a250{
+    background-color: rgb(127, 175, 226);
+}
+
+#a251, #a252, #a253, #a235, #a216, #a197{
+    background-color: rgb(3, 67, 139);
+}
+
+#a204, #a225, #a245, #a247, #a272, #a273, #a274, #a275, #a293, #a294, #a311, #a254, #a255, #a256, #a236, #a217{
+    background-color: rgb(18, 105, 204);
+}
+
+
+
+nav{
+    background-color: #51eefc;
+    height: 50px;
+    text-align: left;
+}
+
+li{
+    display: inline block;
+    font-size: 30px;
+    margin: 1%;
+}
+
+nav li :hover{
+    background-color: rgb(48, 48, 48);
+    color: black;
+    cursor: pointer;
+}
+
+ul{
+    margin: 0%;
+    padding: 0%;
+}
+
+nav li{
+    display: inline;
+    color: rgb(255, 255, 255);
+}
+
+aside{
+    background-color: #6d9ac7;
+    display: inline-block;
+    width: 20%;
+    height: 600px;
+    vertical-align: top;
+}
+
+aside a:active{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+aside a:visited{
+    color: #ffffff;
+}   
+
+aside a:hover{
+    background-color:rgb(48, 48, 48);
+   
+    cursor: pointer;
+
+}
+
+nav a:active{
+    color: #1269cc;
+    background-color: #000000;
+}
+
+nav     a:visited{
+    color: #1269cc;
+}
+
+section{
+    background-color: #1269cc;
+    display: inline-block;
+    width: 80%;
+    height: 600px;
+}
+
+.video-title {
+    text-align: center;
+    font-size: 2em;
+    color: #51eefc; /* Mismo color que en identikit */
+    font-family: FOT-Rodin Pro DB; /* Mismo estilo de fuente que en identikit */
+    margin-bottom: 20px;
+}
+
+.video-frame {
+    display: block;
+    margin: 0 auto; /* Centra el video horizontalmente */
+    width: 1000px; /* Mismo ancho que en multimedia1 */
+    height: 500px; /* Mismo alto que en multimedia1 */
+    border: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.question {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.option {
+    width: 23%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #51eefc;
+    border: 2px solid #51eefc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.option:hover {
+    background-color: #51fc8a;
+    transform: scale(1.05);
+}
+.option img {
+    max-width: 100%;
+    height: auto;       
+    border-radius: 5px;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #ffffff;
+    color: #303030;
+    height: 1%;
+    padding: 10px; 
+}
+
+
+#copyright{
+    text-align: left;
+}
+
+#redes-sociales{
+    text-align: right;
+
+}
+
+.gif-totodile1 {
+    width: 80px;
+    height: auto;
+    margin: 0;
+}
+
+.gif-totodile2 {
+    width: 80px;
+    height: auto;
+    margin-left: 87%; 
+}
+
+.gif-mudkip{
+    width: 80px;
+    height: auto;
+    margin: 0;
+}
+
+.gif-yuki{
+    width: 200px;
+    height: auto;
+    margin: 1%;
+}

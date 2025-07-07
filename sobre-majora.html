@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zelda Majora's Mask | Blog</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/Letter_T_blue_34873.png" type="image/x-icon">
+</head>
+<body>
+<audio id="hover-sound" src="sonidos/pause_menu_cursor.mp3" preload="auto"></audio> 
+
+  <!-- Barra nav -->
+  <div id="inicio">
+    <nav>
+      <img src="img/tumblr_mq0eqhNqRA1r0sz5qo1_500-1405876008.gif" alt="Majora´s Mask gif">
+      <a href="linktree.html" title="Mi Linktree">Linktree</a>
+      <a href="blog.html">Inicio</a>
+      <a href="#sobre">Sobre Zelda Majora’s Mask</a>
+      <a href="mejores-transformaciones.html">Mejores transformaciones del juego</a>
+      <a href="cambios-zora.html">Los cambios de la forma Zora en la nueva versión 3D</a>
+    </nav>
+  </div>
+
+<section id="sobre">
+    <h2>Sobre Zelda Majora’s Mask</h2>
+    <p>The Legend of Zelda: Majora's Mask es un videojuego desarrollado y publicado por Nintendo que se lanzó para la Nintendo 64. Es la sexta entrega de la serie. El juego requiere el Expansion Pak, que permitía ciertas cosas, como gráficos mejorados que no podrían procesarse de otra manera. Fue lanzado en Japón el 27 de abril de 2000, en Canadá y en los Estados Unidos el 24 de octubre de 2000 y en Europa el 17 de noviembre de 2000. El juego fue uno de los más exitosos de Zelda en su momento, vendiendo aproximadamente 314.000 copias durante su primera semana de ventas en Japón y más de tres millones de copias vendidas en total.
+  El juego presenta una historia extraña para un título de Zelda. En lugar de transcurrir en Hyrule como la mayoría de los juegos de Zelda, Link tiene su aventura en Términa, un mundo paralelo a Hyrule, con muchos personajes físicamente idénticos a los personajes de Ocarina of Time. Recibió una nueva versión mejorada para la Nintendo 3DS llamada The Legend of Zelda: Majora's Mask 3D.</p>
+
+  <p>La trama empieza cuando Skull Kid roba la Máscara de Majora, Máscara perteneciente al Vendedor de Máscaras Felices por culpa de Link. Éste le pide a Link que la recupere en un lapso de 3 días antes de que ocurra una catástrofe: Que la luna caiga sobre Termina
+
+  En este momento, Link hará una carrera contrarreloj para detener a la Luna, como en ese lapso es imposible realizar la misión, Link viajará bastantes veces en el tiempo, en los cuales podrá saber y hacer más cosas. Cuando Link viaja en el tiempo, pierde todas las municiones, rupias y demás objetos, pero no pierde las máscaras, que permiten a Link adquirir diferentes poderes dependiendo de cual use. En mi opinión, las mascaras son una de las mecanicas mas divertidas de la saga, y le dan un toque de aire fresco al juego permitiendo a Link transformarse en diferentes razas como los goron o zora y cambiar su cuerpo.</p>
+  </section>
+
+ <footer>
+    <p>Todos los derechos reservados ©Octavio Vidal</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Efecto de sonido hover
+      const sound = document.getElementById('hover-sound');
+      document.querySelectorAll('#inicio nav a').forEach(link => {
+        link.addEventListener('mouseenter', () => {
+          sound.currentTime = 0;
+          sound.play();
+        });
+      });
+    });
+  </script>
+  
+</body>
+</html>

@@ -22,7 +22,9 @@ body {
 
 /* Navbar */
 #inicio{
-  width: 100%
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 
 #inicio nav {
@@ -73,7 +75,7 @@ header h1 {
 
 /* Imagen principal */
 .imagen-principal img {
-  width: 100%;
+  width: 65%;
   height: auto;
   border: 4px solid var(--accent-color);
   border-radius: 10px;
@@ -196,7 +198,7 @@ footer {
 body#linktree-page {
   margin: 0;
   padding: 0;
-  background: url('gif/black and white animation GIF by The New Big Poppa E.gif') center/cover no-repeat fixed;
+  background: url('img/Loop Space GIF by xponentialdesign.gif') center/cover no-repeat fixed;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
@@ -215,6 +217,7 @@ body#linktree-page .container {
   text-align: center;
 }
 
+/* Foto de perfil */
 body#linktree-page .profile-pic {
   width: 120px;
   height: 120px;
@@ -223,8 +226,38 @@ body#linktree-page .profile-pic {
   margin: 0 auto 1rem;
   border: 4px solid #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s cubic-bezier(.4,2,.2,1), box-shadow 0.4s;
+}
+body#linktree-page .profile-pic:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 32px rgba(40,40,40,0.18);
 }
 
+/* Redes sociales */
+body#linktree-page .sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.6rem;
+  margin-top: 0.5rem;
+}
+body#linktree-page .sociales a img {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.25s, filter 0.25s, box-shadow 0.25s;
+  object-fit: cover;
+}
+body#linktree-page .sociales a:hover img {
+  filter: brightness(1.2) drop-shadow(0 0 7px #5553);
+  transform: scale(1.12) rotate(-5deg);
+  box-shadow: 0 8px 20px rgba(60,60,60,0.16);
+}
+
+/* Resto igual que tu diseño */
 body#linktree-page h1 {
   font-size: 1.8rem;
   color: #222;
@@ -253,11 +286,11 @@ body#linktree-page .links a {
   transition: transform 0.3s ease, filter 0.3s ease;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
-
-body#linktree-page .links a.email { background: #dd4b39; }
-body#linktree-page .links a.linkedin { background: #0077b5; }
-body#linktree-page .links a.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285aeb 90%); }
 body#linktree-page .links a.project { background: #4a90e2; }
+body#linktree-page .links a:hover {
+  transform: translateY(-3px) scale(1.02);
+  filter: brightness(1.1);
+}
 
 body#linktree-page .links a:hover {
   transform: translateY(-3px) scale(1.02);

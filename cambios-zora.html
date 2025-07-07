@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zelda Majora's Mask | Blog</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/Letter_T_blue_34873.png" type="image/x-icon">
+</head>
+<body>
+<audio id="hover-sound" src="sonidos/pause_menu_cursor.mp3" preload="auto"></audio> 
+
+  <!-- Barra nav -->
+  <div id="inicio">
+    <nav>
+      <img src="img/tumblr_mq0eqhNqRA1r0sz5qo1_500-1405876008.gif" alt="Majora´s Mask gif">
+      <a href="linktree.html" title="Mi Linktree">Linktree</a>
+      <a href="blog.html">Inicio</a>
+      <a href="sobre-majora.html">Sobre Zelda Majora’s Mask</a>
+      <a href="mejores-transformaciones.html">Mejores transformaciones del juego</a>
+      <a href="#cambios-zora">Los cambios de la forma Zora en la nueva versión 3D</a>
+    </nav>
+  </div>
+
+<section id="cambios-zora">
+    <h2>Los cambios de la forma Zora en la nueva versión 3D</h2>
+    <p>La transformación Zora en la versión original de Nintendo 64 era muy rápida nadando sin necesidad de gastar magia, pero en la versión de Nitendo 3DS, a los desarolladores les pareció buena idea hacer que para activar el modo de nado rapido zora link tenía que activar el escudo en el agua, gastando magia en el proceso, de una manera muy rápida, haciendo costoso usar esta velocidad de nado. Esto hizo a la forma Zora y a toda la parte de la Gran Bahía mucho menos divertida y más tediosa. </p>
+    <iframe src="https://www.youtube.com/embed/vmous633Sx0?si=mgvBVNf8C8-XG9bd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <figure>Un video que explica el cambio de las funciones de la mascara zora en la versión 3D</figure>
+  </section>
+
+ <footer>
+    <p>Todos los derechos reservados ©Octavio Vidal</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Efecto de sonido hover
+      const sound = document.getElementById('hover-sound');
+      document.querySelectorAll('#inicio nav a').forEach(link => {
+        link.addEventListener('mouseenter', () => {
+          sound.currentTime = 0;
+          sound.play();
+        });
+      });
+    });
+  </script>
+  
+</body>
+</html>
